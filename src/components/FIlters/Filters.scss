@@ -1,0 +1,35 @@
+.filtersContainer {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 2px 10px 20px hsl(180, 29%, 50%);
+
+  .filterList {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    flex: 1;
+
+    li {
+      margin: 0 10px;
+    }
+  }
+
+  .clearBtn {
+    cursor: pointer;
+    margin-right: auto;
+    text-decoration: underline;
+    font-size: 1.1rem;
+  }
+
+  .clearBtn:hover {
+    color: hsl(180, 29%, 50%);
+  }
+}

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Job.scss";
 
-const Job = ({ job }) => {
-  console.log(job);
+const Job = (props) => {
+  const { job, addFilter } = props;
 
   const jobTags = () => {
     let tags = [job.role, job.level];
@@ -12,7 +12,7 @@ const Job = ({ job }) => {
     }
 
     return tags.map((tag, i) => (
-      <button className="btn" key={i}>
+      <button className="btn" key={i} onClick={() => addFilter(tag)}>
         {tag}
       </button>
     ));

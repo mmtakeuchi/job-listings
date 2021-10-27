@@ -1,0 +1,27 @@
+.filterBtn {
+  display: flex;
+  align-items: center;
+  color: rgb(91, 164, 164);
+  background: hsl(180, 31%, 95%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  .filterName {
+    padding: 5px;
+  }
+
+  .removeBtn {
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 10px;
+    background: hsl(180, 29%, 50%);
+    color: hsl(180, 31%, 95%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .removeBtn:hover {
+    background: hsl(180, 14%, 20%);
+    color: hsl(180, 31%, 95%);
+  }
+}
