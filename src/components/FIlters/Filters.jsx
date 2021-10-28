@@ -6,12 +6,6 @@ const Filters = (props) => {
   const { filters, removeFilter, clearFilters } = props;
 
   let renderFilters = filters?.map((filter, i) => (
-    // <li key={i}>
-    //   {filter}
-    //   <span>
-    //     <button onClick={() => removeFilter(filter)}>X</button>
-    //   </span>
-    // </li>
     <FilterButton filter={filter} key={i} removeFilter={removeFilter} />
   ));
 
@@ -20,9 +14,9 @@ const Filters = (props) => {
       {filters.length ? (
         <div className="filtersContainer">
           <ul className="filterList">{renderFilters}</ul>
-          <a onClick={clearFilters} className="clearBtn">
+          <span onClick={clearFilters} className="clearBtn">
             Clear
-          </a>
+          </span>
         </div>
       ) : (
         ""
