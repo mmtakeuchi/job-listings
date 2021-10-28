@@ -41,6 +41,7 @@ const Job = (props) => {
           <span>&#8226;</span> {job.location}
         </p>
       </div>
+      <hr className="lineBreak" />
       <div className="jobTags">{jobTags()}</div>
     </div>
   );
